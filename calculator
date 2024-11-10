@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+.property-card {
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+}
+
+.property-card img {
+  width: 100%;
+  max-width: 300px;
+}
+
+#mortgage-form, #contact-form {
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#mortgageResult {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Animations */
+.property-card, #mortgage-form, #contact-form {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.property-card.show, #mortgage-form.show, #contact-form.show {
+  opacity: 1;
+}
